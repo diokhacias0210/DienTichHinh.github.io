@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DIỆN TÍCH HÌNH CHỮ NHẬT</title>
+    <link rel="stylesheet" type="text/css" href="/GiaoDien.css">
+</head>
+<body>
+    <script src="TinhToan.js" type="text/javascript"></script>
+    <div class="khunglon">          
+        <div id="dau">
+            <header>
+                <h1 class="tieude"><strong>Diện tích hình chữ nhật</strong></h1>
+                <button onclick="window.location.href='/HinhChuNhat.html'" class="nut">Hình chữ nhật</button>
+                <button onclick="window.location.href='/HinhVuong.html'" class="nut">Hình vuông</button>
+                <button onclick="window.location.href='/HinhThang.html'" class="nut">Hình thang</button>
+                <button onclick="window.location.href='/HinhTron.html'" class="nut">Hình tròn</button>
+            </header>
+        </div>
+        <div id="than">
+            <main>
+                <form>
+                    <div class="khungtable">
+                        <fieldset class="phannhap">
+                            <legend>Hãy nhập dữ liệu</legend>
+                            <table class="bang1">
+                                <tr>
+                                    <td id="cot1"><label for="chieudaicn">Chiều dài:</label></td>
+                                    <td id="cot2"><input type="text" id="chieudaicn" autocomplete="off" maxlength="40"></td>
+                                </tr>
+                                <tr>
+                                    <td id="cot1"><label for="chieurongcn">Chiều rộng:</label></td>
+                                    <td id="cot2"><input type="text" id="chieurongcn" autocomplete="off" maxlength="40"></td>
+                                </tr>                          
+                            </table>
+                        </fieldset>
+                        <fieldset class="phanxuat">
+                            <table class="bang2">
+                                <tr>
+                                    <td colspan="2" id="cot2" class="nuthanhdong">
+                                        <button onclick="tinhcn(event)" id="tinhtoan">Tính toán</button>
+                                        <input type="reset" id="reset" value="Xoá">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="dong"><strong>Kết quả:</strong> <span id="ketquacn"></span></td>
+                                </tr>
+                            </table>
+                            
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
